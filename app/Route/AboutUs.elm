@@ -131,20 +131,19 @@ type alias Leader =
 
 leaders : List Leader
 leaders =
-    [ { name = "Rebecca VonMoser"
-      , title = "COO"
-      , bio = "A mother of boys turned IT consulting leader, Rebecca is known for her exceptional organizational skills and meticulous attention to detail."
+    [ { name = "Douglas VonMoser"
+      , title = "CEO"
+      , bio = "Uses words like honor, code, and loyalty as punchlines. Doug is a highly skilled and innovative software developer with a passion for creating cutting-edge technology solutions. With a strong foundation in computer science and a keen eye for problem-solving, he has consistently demonstrated his ability to turn complex ideas into functional software applications"
       , image = "https://example.com/john-doe.jpg"
       }
-    , { name = "Brittany VonMoser"
-      , title = "CTO"
-      , bio = "Brittany's unique background allows her to bridge the gap between healthcare providers and technology experts, resulting in innovative solutions that improve patient care."
+    , { name = "Jospeh VonMoser"
+      , title = "President"
+      , bio = "Dedicated and disciplined individual with a passion for all things business and finance. Having served in the United States Marine Corps as an EOD technician for a little under a decade, he developed invaluable leadership, teamwork, and problem-solving skills."
       , image = "https://example.com/jane-smith.jpg"
       }
     , { name = "Daniel VonMoser"
       , title = "CIO"
-      , bio = "Air Force Reserve veteran and IT consultant with extensive experience in server management, automation, cloud solutions, and security."
+      , bio = "Air Force Veteran and IT consultant with extensive experience in server management, automation, cloud solutions, and security."
       , image = "https://example.com/bob-johnson.jpg"
       }
     ]
-
