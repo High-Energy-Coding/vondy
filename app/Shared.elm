@@ -134,10 +134,10 @@ navItemsView model =
             []
 
         True ->
-            [ Route.Index |> Route.link [] [ div [ class "item" ] [ a [] [ text "Main" ] ] ]
-            , Route.AboutUs |> Route.link [] [ div [ class "item" ] [ a [] [ text "About Us" ] ] ]
-            , Route.Services |> Route.link [] [ div [ class "item" ] [ a [] [ text "Services" ] ] ]
-            , Route.ContactUs |> Route.link [] [ div [ class "item" ] [ a [] [ text "Contact Us" ] ] ]
+            [ div [ class "item" ] [ Route.Index |> Route.link [] [ text "Main" ] ]
+            , div [ class "item" ] [ Route.AboutUs |> Route.link [] [ text "About Us" ] ]
+            , div [ class "item" ] [ Route.Services |> Route.link [] [ text "Services" ] ]
+            , div [ class "item" ] [ Route.ContactUs |> Route.link [] [ text "Contact Us" ] ]
             ]
 
 
