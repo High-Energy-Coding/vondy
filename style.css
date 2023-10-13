@@ -242,25 +242,35 @@ h1 {
     align-items: center;
     justify-content: center;
 }
+
 .expertise {
-    max-width: 960px;
+    max-width: 991px;
+    min-height: 1080px;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    min-height: 1080px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    
     @media only screen and (min-width: 600px) {
         min-height: 500px;
-        flex-direction: row;
+        flex-direction: wrap;
     }
-
 }
+
 .expertise div {
+    margin: 8px 16px;
+    border-radius: 5%;
+    max-width: 400px;
     background-color: #a9a8ab;
     min-height: 360px;
     min-width: calc(33% - 32px);
-    margin: 8px;
+    @media only screen and (min-width: 600px) {
+        margin: 32px;
+    }
 }
+
 .expertise div .copy{
     padding-left: 16px;
     padding-right: 16px
