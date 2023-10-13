@@ -141,22 +141,25 @@ navItemsView model =
             ]
 
 
+
+
 footerView =
     footer
         [ class "footer" ]
         [ div
             [ class "contact-us" ]
             [ h4 [] [ text "Contact Us" ]
-            , p [] [ text "123 Consulting Lane" ]
-            , p [] [ text "New York, NY 10001" ]
-            , p [] [ text "555-555-5555" ]
-            , p [] [ text "contact@consultingfirm.com" ]
+            , p [] [ text "9872 Meadow Field Circle" ]
+            , p [] [ text "Tampa, FL 33626" ]
+            , p [] [ text "(773)853-3421" ]
+            , p [] [ text "ContactUs@vondy.com" ]
             ]
         , div
             [ class "social-media" ]
             [ h4 [] [ text "Social Media" ]
             , div [ class "icons" ]
-                [ i [ class "fa fa-twitter" ] []
+                [ a [ class "fa fa-instagram", href "https://instagram.com/vondysolutions?igshid=YTQwZjQ0NmI0OA=="] [] 
+                , i [ class "fa fa-twitter" ] []
                 , i [ class "fa fa-linkedin" ] []
                 , i [ class "fa fa-facebook" ] []
                 ]
