@@ -67,7 +67,7 @@ view :
     -> Shared.Model
     -> View.View (PagesMsg.PagesMsg Msg)
 view app shared =
-    { title = "Services"
+    { title = "Vondy Solutions | Services"
     , body =
         [ div [ class "services-container" ]
             [ div [ class "whiteboard" ] [ img [ src "/whiteboard.jpg" ] [] ]
@@ -78,4 +78,3 @@ view app shared =
             ]
         ]
     }
-

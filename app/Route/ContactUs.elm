@@ -69,7 +69,7 @@ view :
     -> Shared.Model
     -> View.View (PagesMsg.PagesMsg Msg)
 view app shared =
-    { title = "ContactUs", body = [ contactUsView ] }
+    { title = "Vondy Solutions | Contact Us", body = [ contactUsView ] }
 
 
 contactUsView =
@@ -87,4 +87,3 @@ action :
     -> BackendTask.BackendTask FatalError.FatalError (Server.Response.Response ActionData ErrorPage.ErrorPage)
 action routeParams request =
     BackendTask.succeed (Server.Response.render {})
-

@@ -87,7 +87,7 @@ view :
     -> Shared.Model
     -> View.View (PagesMsg.PagesMsg Msg)
 view app shared =
-    { title = "AboutUs", body = [ aboutUsView ] }
+    { title = "Vondy Solutions | About Us", body = [ aboutUsView ] }
 
 
 aboutUsView =

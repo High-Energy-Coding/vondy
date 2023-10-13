@@ -69,7 +69,7 @@ head app =
             }
         , description = "Welcome to elm-pages!"
         , locale = Nothing
-        , title = "elm-pages is running"
+        , title = "Vondy Solutions"
         }
         |> Seo.website
 
@@ -79,7 +79,7 @@ view :
     -> Shared.Model
     -> View (PagesMsg Msg)
 view app shared =
-    { title = "elm-pages is running"
+    { title = "Vondy Solutions"
     , body = homeView
     }
 
