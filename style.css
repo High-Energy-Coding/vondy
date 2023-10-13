@@ -49,13 +49,14 @@ h1 {
     }
 }
 .topbar .icon {
-  display: block;
-  position: absolute;
-  right: 40px;
-  font-size: x-large;
+    display: block;
+    position: absolute;
+    right: 40px;
+    font-size: x-large;
+    background-color: white;
+    border: none;
     @media only screen and (min-width: 768px) {
-    display: none;
-    
+        display: none;
     }
 
 }
@@ -320,6 +321,13 @@ p {
     @media only screen and (min-width: 768px) {
         width: 55%;
     }
+}
+
+.why h1 {
+    padding: 0 16px;
+}
+.why p {
+    padding: 16px;
 
 }
 
@@ -327,8 +335,11 @@ p {
 .about-us {
     max-width: 960px;
     margin: 0 auto;
-    padding: 50px;
+    padding: 8px;
     text-align: center;
+    @media only screen and (min-width: 500px) {
+        padding: 50px;
+    }
 }
 .about-us .copy {
     max-width: 800px;
@@ -342,6 +353,7 @@ p {
 }
 
 .about-us p {
+    padding: 8px;
     font-size: 18px;
     line-height: 1.5;
     margin-bottom: 30px;
@@ -358,14 +370,17 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    margin-top: 40px;
     @media only screen and (min-width: 700px) {
         flex-direction: row;
     }
 }
 
 .about-us .leaders .leader {
-    max-width: 300px;
+    width: 300px;
+    padding: 0 8px;
+    margin: 0 8px;
 }
 
 .about-us .leader img {
