@@ -8,8 +8,6 @@ module Route.Services exposing (Model, Msg, RouteParams, route, Data, ActionData
 
 import BackendTask exposing (BackendTask)
 import Copy
-import Effect
-import ErrorPage
 import FatalError exposing (FatalError)
 import Head
 import Html exposing (..)
@@ -17,10 +15,7 @@ import Html.Attributes exposing (..)
 import Html.Events exposing (..)
 import PagesMsg
 import RouteBuilder
-import Server.Request
-import Server.Response
 import Shared
-import UrlPath
 import View
 
 

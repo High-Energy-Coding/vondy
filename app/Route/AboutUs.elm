@@ -143,7 +143,7 @@ leaders =
       }
     , { name = "Daniel VonMoser"
       , title = "CIO"
-      , bio = "Air Force Veteran and IT consultant with extensive experience in server management, automation, cloud solutions, and security."
+      , bio = "Air Force Veteran and IT consultant with extensive experience in server management, automation, cloud solutions, and security. Throughout his career, Daniel has adeptly navigated ambiguity, consistently leading teams towards clear and innovative solutions."
       , image = "https://example.com/bob-johnson.jpg"
       }
     ]
