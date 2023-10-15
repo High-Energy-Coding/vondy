@@ -229,7 +229,8 @@ h1 {
 .contact-us {
     width: 50%;
 }
-.icons i {
+
+.icons a {
     margin-left: 8px;
     margin-right: 8px;
 
