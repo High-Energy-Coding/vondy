@@ -1,0 +1,9 @@
+.git
+node_modules/
+elm-stuff/
+dist/
+.cache/
+gen/
+.elm-pages
+functions/server-render
+functions/render

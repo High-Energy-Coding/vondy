@@ -1,6 +1,7 @@
-# elm-pages-starter
+# Vondy
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/dillonkearns/elm-pages-starter)
+https://fontawesome.com/v4/icons/
+
 
 ## Setup Instructions
 
@@ -33,12 +34,3 @@ give that a try first.
 ```
 
 Be sure to use `lamdera reset` to reset the caches for these cases. See more info about that in the Lamdera docs: https://dashboard.lamdera.app/docs/ides-and-tooling#problem-corrupt-caches
-
-### Docs
-
-Check out [the Package Docs](https://package.elm-lang.org/packages/dillonkearns/elm-pages/latest/). You can also use `npx elm-pages docs` from your project to view the documentation for the `RouteBuilder` module.
-
-## Running Scripts with `elm-pages run`
-
-- `npm install`
-- `npx elm-pages run script/src/AddRoute.elm User.Id_` - now you can try out the generator! And you can tweak it, or even define new generator modules in the `script/` folder! You can also shorten this command to `npx elm-pages run AddRoute User.Id_` if you prefer.
