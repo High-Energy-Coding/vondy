@@ -65,8 +65,7 @@ view app shared =
     { title = "Vondy Solutions | Services"
     , body =
         [ div [ class "services-container" ]
-            [ div [ class "whiteboard" ] [ img [ src "/whiteboard.jpg" ] [] ]
-            , div [ class "services" ]
+            [ div [ class "services" ]
                 [ h1 [] [ text "Services" ]
                 , p [ class "copy" ] Copy.services
                 ]

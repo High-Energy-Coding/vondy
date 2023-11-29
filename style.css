@@ -412,6 +412,7 @@ p {
 }
 .whiteboard img {
     max-width: 100%;
+    opacity: 0.3;
 
 }
 .about-us-container {
@@ -435,3 +436,27 @@ p {
 }
 /* Prevent default blue link clickie thing */
 a { color: inherit; }
+
+.interested {
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+.connect {
+
+    font-size: 16px;
+}
+.contact-container {
+    min-height: calc(100vh - (112px + 265px));
+}
+.typings input {
+    padding: 0 8px;
+    min-width: 400px;
+    font-size: 16px;
+    height: 32px;
+}
+.typings {
+    margin: 16px;
+}
+.message {
+    min-height: 56px;
+}

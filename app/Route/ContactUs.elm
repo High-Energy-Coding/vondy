@@ -74,9 +74,16 @@ view app shared =
 
 contactUsView =
     div [ class "contact-container" ]
-        [ div [ class "whiteboard" ] [ img [ src "/whiteboard.jpg" ] [] ]
-        , div [ class "services" ]
-            [ h1 [] [ text "Interested in connecting with us?" ]
+        [ --  div [ class "whiteboard" ] [ img [ src "/whiteboard.jpg" ] [] ]
+          h1 [ class "interested" ] [ text "Interested in connecting with us?" ]
+        , div [ class "connect" ]
+            [ Html.form []
+                [ div [ class "typings" ] [ input [ placeholder "Name" ] [] ]
+                , div [ class "typings" ] [ input [ placeholder "E-mail" ] [] ]
+                , div [ class "typings" ] [ input [ placeholder "Company" ] [] ]
+                , div [ class "typings" ] [ input [ placeholder "Message", class "message" ] [] ]
+                , button [] [ text "Send" ]
+                ]
             ]
         ]
 
