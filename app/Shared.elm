@@ -21,13 +21,18 @@ template =
     , view = view
     , data = data
     , subscriptions = subscriptions
-    , onPageChange = Nothing
+    , onPageChange = Just ClickedALink
     }
 
 
 type Msg
     = SharedMsg SharedMsg
     | MenuClicked
+    | ClickedALink
+        { path : UrlPath
+        , query : Maybe String
+        , fragment : Maybe String
+        }
 
 
 type alias Data =
@@ -71,6 +76,9 @@ update msg model =
         MenuClicked ->
             ( { model | showMenu = not model.showMenu }, Effect.none )
 
+        ClickedALink _ ->
+            ( { model | showMenu = False }, Effect.none )
+
 
 subscriptions : UrlPath -> Model -> Sub Msg
 subscriptions _ _ =
@@ -109,7 +117,6 @@ navView model =
             , div [ class "clickies" ]
                 [ div [ class "clickie" ] [ Route.Index |> Route.link [] [ text "Main" ] ]
                 , div [ class "clickie" ] [ Route.AboutUs |> Route.link [] [ text "About Us" ] ]
-                , div [ class "clickie" ] [ Route.Services |> Route.link [] [ text "Services" ] ]
                 , div [ class "clickie" ] [ Route.ContactUs |> Route.link [] [ text "Contact Us" ] ]
                 ]
             , hamburgerOrX model
@@ -136,7 +143,6 @@ navItemsView model =
         True ->
             [ div [ class "item" ] [ Route.Index |> Route.link [] [ text "Main" ] ]
             , div [ class "item" ] [ Route.AboutUs |> Route.link [] [ text "About Us" ] ]
-            , div [ class "item" ] [ Route.Services |> Route.link [] [ text "Services" ] ]
             , div [ class "item" ] [ Route.ContactUs |> Route.link [] [ text "Contact Us" ] ]
             ]
 
