@@ -109,11 +109,13 @@ kickAbout =
 
 
 viewLeader leader =
-    div [ class "leader" ]
-        [ img [ src leader.image ] []
-        , h2 [] [ text leader.name ]
-        , p [] [ text leader.title ]
-        , p [] [ text leader.bio ]
+    div [ class "leader-container" ]
+        [ div [ class "leader" ]
+            [ img [ src leader.image ] []
+            , h2 [] [ text leader.name ]
+            , p [] [ text leader.title ]
+            , p [] [ text leader.bio ]
+            ]
         ]
 
 
@@ -129,7 +131,7 @@ leaders : List Leader
 leaders =
     [ { name = "Douglas VonMoser"
       , title = "CEO"
-      , bio = "Uses words like honor, code, and loyalty as punchlines. Doug is a highly skilled and innovative software developer with a passion for creating cutting-edge technology solutions. With a strong foundation in computer science and a keen eye for problem-solving, he has consistently demonstrated his ability to turn complex ideas into functional software applications"
+      , bio = "Doug is a highly skilled and innovative software developer with a passion for creating cutting-edge technology solutions. With a strong foundation in computer science and a keen eye for problem-solving, he has consistently demonstrated his ability to shatter complexity."
       , image = "/doug.jpg"
       }
     , { name = "Joseph VonMoser"

@@ -382,6 +382,11 @@ p {
     padding: 0 8px;
     margin: 0 8px;
 }
+.leader-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 
 .about-us .leader img {
     display: block;
