@@ -62,7 +62,7 @@ head :
 head app =
     Seo.summary
         { canonicalUrlOverride = Nothing
-        , siteName = "elm-pages"
+        , siteName = "Vondy Solutions"
         , image =
             { url = Pages.Url.external "TODO"
             , alt = "elm-pages logo"

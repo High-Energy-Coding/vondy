@@ -2,8 +2,10 @@
 node_modules/
 elm-stuff/
 dist/
+dist-server/
 .cache/
 gen/
-.elm-pages
+.elm-pages/
 functions/server-render
 functions/render
+.netlify/

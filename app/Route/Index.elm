@@ -60,14 +60,14 @@ head :
 head app =
     Seo.summary
         { canonicalUrlOverride = Nothing
-        , siteName = "elm-pages"
+        , siteName = "Vondy Solutions"
         , image =
-            { url = [ "images", "icon-png.png" ] |> UrlPath.join |> Pages.Url.fromPath
-            , alt = "elm-pages logo"
+            { url = [ "logo.png" ] |> UrlPath.join |> Pages.Url.fromPath
+            , alt = "Vondy Solutions Logo"
             , dimensions = Nothing
             , mimeType = Nothing
             }
-        , description = "Welcome to elm-pages!"
+        , description = "Tech Brilliance, Business Resilience"
         , locale = Nothing
         , title = "Vondy Solutions"
         }
