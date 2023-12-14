@@ -115,9 +115,9 @@ navView model =
         ([ div [ class "topbar" ]
             [ Route.Index |> Route.link [] [ img [ class "logo", src "/logo.png" ] [] ]
             , div [ class "clickies" ]
-                [ div [ class "clickie" ] [ Route.Index |> Route.link [] [ text "Main" ] ]
-                , div [ class "clickie" ] [ Route.AboutUs |> Route.link [] [ text "About Us" ] ]
-                , div [ class "clickie" ] [ Route.ContactUs |> Route.link [] [ text "Contact Us" ] ]
+                [ Route.Index |> Route.link [] [ div [ class "clickie" ] [ text "Main" ] ]
+                , Route.AboutUs |> Route.link [] [ div [ class "clickie" ] [ text "About Us" ] ]
+                , Route.ContactUs |> Route.link [] [ div [ class "clickie" ] [ text "Contact Us" ] ]
                 ]
             , hamburgerOrX model
             ]
@@ -141,9 +141,9 @@ navItemsView model =
             []
 
         True ->
-            [ div [ class "item" ] [ Route.Index |> Route.link [] [ text "Main" ] ]
-            , div [ class "item" ] [ Route.AboutUs |> Route.link [] [ text "About Us" ] ]
-            , div [ class "item" ] [ Route.ContactUs |> Route.link [] [ text "Contact Us" ] ]
+            [ Route.Index |> Route.link [] [ div [ class "item" ] [ text "Main" ] ]
+            , Route.AboutUs |> Route.link [] [ div [ class "item" ] [ text "About Us" ] ]
+            , Route.ContactUs |> Route.link [] [ div [ class "item" ] [ text "Contact Us" ] ]
             ]
 
 

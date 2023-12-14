@@ -195,11 +195,13 @@ h1 {
 }
 .logo-dark-container {
     background-color: #4e555b;
-
+    display: flex;
+    justify-content: center;
 }
+
 .logo-dark {
     max-height: 400px;
-
+    overflow: hidden;
 }
 
 .line{
@@ -447,7 +449,7 @@ a { color: inherit; }
     margin-bottom: 32px;
 }
 .connect {
-
+    margin-bottom: 64px;
     font-size: 16px;
 }
 .contact-container {
@@ -455,10 +457,19 @@ a { color: inherit; }
 }
 .typings input {
     padding: 0 8px;
-    min-width: 400px;
+    max-width: 400px;
+    min-width: 240px;
     font-size: 16px;
     height: 32px;
 }
+
+@media only screen and (min-width: 500px) {
+    .typings input {
+        min-width: 400px;
+    }
+}
+
+
 .typings {
     margin: 16px;
 }
