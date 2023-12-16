@@ -92,6 +92,7 @@ h1 {
 }
 
 .hero {
+  aspect-ratio: 13/8;
   max-height: calc(100vh - 112px);
   width: 100%;
   animation-name: pan-zoom;
@@ -384,6 +385,10 @@ p {
     padding: 0 8px;
     margin: 0 8px;
 }
+.about-us .leaders .leader-container.order-1{ order: 1 }
+.about-us .leaders .leader-container.order-2{ order: 2 }
+.about-us .leaders .leader-container.order-3{ order: 3 }
+
 .leader-container {
     width: 100%;
     display: flex;
@@ -414,6 +419,7 @@ p {
     max-width: 100%;
 }
 .office img {
+    aspect-ratio: 754/317;
     max-width: 100%;
 
 }
