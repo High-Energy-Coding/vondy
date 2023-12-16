@@ -72,16 +72,24 @@ view app shared =
     { title = "Vondy Solutions | Contact Us", body = [ contactUsView ] }
 
 
+type alias ContactUsLead =
+    { name : String
+    , email : String
+    , company : String
+    , message : String
+    }
+
+
 contactUsView =
     div [ class "contact-container" ]
         [ --  div [ class "whiteboard" ] [ img [ src "/whiteboard.jpg" ] [] ]
           h1 [ class "interested" ] [ text "Interested in connecting with us?" ]
         , div [ class "connect" ]
-            [ Html.form []
-                [ div [ class "typings" ] [ input [ placeholder "Name" ] [] ]
-                , div [ class "typings" ] [ input [ placeholder "E-mail" ] [] ]
-                , div [ class "typings" ] [ input [ placeholder "Company" ] [] ]
-                , div [ class "typings" ] [ input [ placeholder "Message", class "message" ] [] ]
+            [ Html.form [ class "netlify" ]
+                [ div [ class "typings" ] [ input [ name "name", placeholder "Name" ] [] ]
+                , div [ class "typings" ] [ input [ name "email", placeholder "E-mail" ] [] ]
+                , div [ class "typings" ] [ input [ name "company", placeholder "Company" ] [] ]
+                , div [ class "typings" ] [ input [ name "message", placeholder "Message", class "message" ] [] ]
                 , button [] [ text "Send" ]
                 ]
             ]
