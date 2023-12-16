@@ -385,9 +385,21 @@ p {
     padding: 0 8px;
     margin: 0 8px;
 }
-.about-us .leaders .leader-container.order-1{ order: 1 }
-.about-us .leaders .leader-container.order-2{ order: 2 }
-.about-us .leaders .leader-container.order-3{ order: 3 }
+.about-us .leaders .leader-container.order-1{
+    @media only screen and (max-width: 700px) {
+        order: 1
+    }
+}
+.about-us .leaders .leader-container.order-2{
+    @media only screen and (max-width: 700px) {
+        order: 2
+    }
+}
+.about-us .leaders .leader-container.order-3{
+    @media only screen and (max-width: 700px) {
+        order: 3
+    }
+}
 
 .leader-container {
     width: 100%;
