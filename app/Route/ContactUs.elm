@@ -85,7 +85,13 @@ contactUsView =
         [ --  div [ class "whiteboard" ] [ img [ src "/whiteboard.jpg" ] [] ]
           h1 [ class "interested" ] [ text "Interested in connecting with us?" ]
         , div [ class "connect" ]
-            [ Html.form [ name "connect", class "netlify", Html.Attributes.attribute "data-netlify" "true", method "POST" ]
+            [ Html.form
+                [ name "connect"
+                , class "netlify"
+                , Html.Attributes.attribute "data-netlify" "true"
+                , Html.Attributes.attribute "action" "/"
+                , method "POST"
+                ]
                 [ div [ class "typings" ] [ input [ type_ "text", name "name", placeholder "Name" ] [] ]
                 , div [ class "typings" ] [ input [ type_ "email", name "email", placeholder "E-mail" ] [] ]
                 , div [ class "typings" ] [ input [ type_ "text", name "company", placeholder "Company" ] [] ]
