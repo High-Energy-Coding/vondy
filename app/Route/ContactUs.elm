@@ -92,7 +92,8 @@ contactUsView =
                 , Html.Attributes.attribute "action" "/"
                 , method "POST"
                 ]
-                [ div [ class "typings" ] [ input [ type_ "text", name "name", placeholder "Name" ] [] ]
+                [ input [ type_ "hidden", name "form-name", value "connect" ] []
+                , div [ class "typings" ] [ input [ type_ "text", name "name", placeholder "Name" ] [] ]
                 , div [ class "typings" ] [ input [ type_ "email", name "email", placeholder "E-mail" ] [] ]
                 , div [ class "typings" ] [ input [ type_ "text", name "company", placeholder "Company" ] [] ]
                 , div [ class "typings" ] [ input [ type_ "text", name "message", placeholder "Message", class "message" ] [] ]
