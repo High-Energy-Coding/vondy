@@ -95,8 +95,8 @@ h1 {
   aspect-ratio: 13/8;
   max-height: calc(100vh - 112px);
   width: 100%;
+  animation: pan-zoom 15s forwards;
   animation-name: pan-zoom;
-  animation-duration: 15s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: 1;
   object-fit: cover; /* Prevent the image from stretching and fill the container */
