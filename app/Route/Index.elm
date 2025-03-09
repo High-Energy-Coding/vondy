@@ -90,13 +90,13 @@ homeView =
         , div [ class "row " ] [ whatWeDoView ]
         , div [ class "expertise-row" ] [ expertise ]
         , div [ class "kickass-row " ] [ kickass ]
-        , div [ class "logo-row " ] [ logoRow ]
+        , div [ class "home-logo-row " ] [ logoRow ]
         ]
     ]
 
 
 hero2 =
-    [ img [ class "hero", src "/city1.jpg" ] []
+    [ img [ class "hero", src "/tampa.png" ] []
     , h1 [ class "headline" ] [ text "Innovate", br [] [], text "with", br [] [], text "confidence" ]
     ]
 

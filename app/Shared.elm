@@ -117,6 +117,7 @@ navView model =
             , div [ class "clickies" ]
                 [ Route.Index |> Route.link [] [ div [ class "clickie" ] [ text "Main" ] ]
                 , Route.AboutUs |> Route.link [] [ div [ class "clickie" ] [ text "About Us" ] ]
+                , Route.Accreditations |> Route.link [] [ div [ class "clickie" ] [ text "Accreditations" ] ]
                 , Route.ContactUs |> Route.link [] [ div [ class "clickie" ] [ text "Contact Us" ] ]
                 ]
             , hamburgerOrX model
@@ -143,6 +144,7 @@ navItemsView model =
         True ->
             [ Route.Index |> Route.link [] [ div [ class "item" ] [ text "Main" ] ]
             , Route.AboutUs |> Route.link [] [ div [ class "item" ] [ text "About Us" ] ]
+            , Route.Accreditations |> Route.link [] [ div [ class "item" ] [ text "Accreditations" ] ]
             , Route.ContactUs |> Route.link [] [ div [ class "item" ] [ text "Contact Us" ] ]
             ]
 

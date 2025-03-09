@@ -134,19 +134,19 @@ leaders =
     [ { name = "Douglas VonMoser"
       , title = "CTO"
       , bio = "Doug is a highly skilled and innovative software developer with a passion for creating cutting-edge technology solutions. With a strong foundation in computer science and a keen eye for problem-solving, he has consistently demonstrated his ability to shatter complexity."
-      , image = "/doug.jpg"
+      , image = "/doug.png"
       , order = 3
       }
     , { name = "Joseph VonMoser"
       , title = "President"
       , bio = "Dedicated and disciplined individual with a passion for all things business and finance. Having served in the United States Marine Corps as an EOD technician for a little under a decade, he developed invaluable leadership, teamwork, and problem-solving skills."
-      , image = "/doug.jpg"
+      , image = "/joe.jpg"
       , order = 1
       }
     , { name = "Daniel VonMoser"
       , title = "CIO"
       , bio = "Air Force Veteran and IT consultant with extensive experience in server management, automation, cloud solutions, and security. Throughout his career, Daniel has adeptly navigated ambiguity, consistently leading teams towards clear and innovative solutions."
-      , image = "/doug.jpg"
+      , image = "/dan.jpeg"
       , order = 2
       }
     ]
