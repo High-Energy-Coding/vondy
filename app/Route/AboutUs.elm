@@ -114,7 +114,6 @@ viewLeader count leader =
         [ div [ class "leader" ]
             [ img [ src leader.image ] []
             , h2 [] [ text leader.name ]
-            , p [] [ text leader.title ]
             , p [] [ text leader.bio ]
             ]
         ]
