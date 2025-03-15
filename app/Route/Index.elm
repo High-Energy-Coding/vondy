@@ -97,8 +97,23 @@ homeView =
 
 hero2 =
     [ img [ class "hero", src "/tampa.png" ] []
-    , h1 [ class "headline" ] [ text "Innovate", br [] [], text "with", br [] [], text "confidence" ]
+    , div [ class "confidence-mobile" ] [ welcome ]
+    , div [ class "confidence-tablet" ]
+        [ div [ class "trapezoid" ]
+            [ welcome ]
+        ]
     ]
+
+
+welcome =
+    div [ class "welcome" ]
+        [ h1 [ class "headline" ] [ text "Vondy Solutions" ]
+        , h2 [ class "sub-headline" ] [ text "We simplify automation, cloud migration, and IT procurement—powering your infrastructure with smart solutions you can count on" ]
+        , Route.AboutUs
+            |> Route.link []
+                [ button [ class "hero-cta" ] [ text "Learn More ", i [ class "fa fa-arrow-right" ] [] ]
+                ]
+        ]
 
 
 whatWeDoView =
