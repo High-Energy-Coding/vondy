@@ -155,19 +155,21 @@ footerView =
         [ div
             [ class "contact-us" ]
             [ h4 [] [ text "Contact Us" ]
-            , p [] [ text "9872 Meadow Field Circle" ]
             , p [] [ text "Tampa, FL 33626" ]
             , p [] [ text "(773) 853-3421" ]
             , p [] [ text "hello@vondysolutions.com" ]
             ]
-        , div
-            [ class "social-media" ]
-            [ h4 [] [ text "Social Media" ]
-            , div [ class "icons" ]
-                [ a [ class "fa fa-instagram", href "https://instagram.com/vondysolutions" ] []
-                , i [ class "fa fa-twitter" ] []
-                , i [ class "fa fa-linkedin" ] []
-                , i [ class "fa fa-facebook" ] []
-                ]
+        ]
+
+
+social =
+    div
+        [ class "social-media" ]
+        [ h4 [] [ text "Social Media" ]
+        , div [ class "icons" ]
+            [ a [ class "fa fa-instagram", href "https://instagram.com/vondysolutions" ] []
+            , i [ class "fa fa-twitter" ] []
+            , i [ class "fa fa-linkedin" ] []
+            , i [ class "fa fa-facebook" ] []
             ]
         ]
