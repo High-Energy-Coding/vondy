@@ -189,6 +189,14 @@ h1 {
   transform: translateY(10px);
   animation: fadeInUp 1.2s ease-out forwards 0.3s;
 }
+@media only screen and (min-width: 999px) {
+  .headline {
+    font-size: 48px;
+  }
+  .sub-headline {
+    font-size: 18px;
+  }
+}
 
 .sub-headline {
   opacity: 0;
