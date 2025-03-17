@@ -151,6 +151,15 @@ h1 {
   border: none;
   cursor: pointer;
 }
+.submit {
+  border-radius: 12px;
+  background-color: #a1b7c4;
+  padding: 8px 96px;
+  margin-top: 8px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
 
 .confidence-tablet {
   position: absolute;
@@ -717,11 +726,6 @@ a {
   color: inherit;
 }
 
-.interested {
-  margin-top: 32px;
-  margin-bottom: 32px;
-}
-
 .connect {
   margin-bottom: 64px;
   font-size: 16px;
@@ -729,6 +733,50 @@ a {
 
 .contact-container {
   min-height: calc(100vh - (112px + 265px));
+}
+
+.meeting {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 56px;
+}
+
+@media only screen and (min-width: 500px) {
+  .meeting {
+    height: 300px;
+  }
+}
+
+.meeting::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(161, 183, 196, 0.83); /* Blue with 40% opacity */
+  pointer-events: none; /* Ensures it doesn't interfere with clicks */
+}
+
+.interested {
+  color: white;
+  z-index: 2;
+  margin-top: 40px;
+  margin-bottom: 32px;
+}
+.sub-interested {
+  z-index: 2;
+  color: white;
+  max-width: 395px;
+  width: 70%;
+  font-size: 14px;
+  margin-bottom: 56px;
 }
 
 .typings input {

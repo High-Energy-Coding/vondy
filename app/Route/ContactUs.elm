@@ -82,8 +82,12 @@ type alias ContactUsLead =
 
 contactUsView =
     div [ class "contact-container" ]
-        [ --  div [ class "whiteboard" ] [ img [ src "/whiteboard.jpg" ] [] ]
-          h1 [ class "interested" ] [ text "Interested in connecting with us?" ]
+        [ div [ class "contact-top" ]
+            [ div [ class "meeting", style "background-image" "url(\"meeting.jpg\")" ]
+                [ h1 [ class "interested" ] [ text "Contact Us" ]
+                , h2 [ class "sub-interested" ] [ text "We can turn your complex IT and infrastructure problems into simple solutions. Reach out today." ]
+                ]
+            ]
         , div [ class "connect" ]
             [ Html.form
                 [ name "connect"
@@ -97,7 +101,7 @@ contactUsView =
                 , div [ class "typings" ] [ input [ type_ "email", name "email", placeholder "E-mail" ] [] ]
                 , div [ class "typings" ] [ input [ type_ "text", name "company", placeholder "Company" ] [] ]
                 , div [ class "typings" ] [ input [ type_ "text", name "message", placeholder "Message", class "message" ] [] ]
-                , button [ type_ "submit" ] [ text "Send" ]
+                , button [ class "submit", type_ "submit" ] [ text "Send" ]
                 ]
             ]
         ]
