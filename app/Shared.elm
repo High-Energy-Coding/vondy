@@ -157,7 +157,7 @@ footerView =
             [ h4 [] [ text "Contact Us" ]
             , p [] [ text "Tampa, FL 33626" ]
             , p [] [ text "(773) 853-3421" ]
-            , p [] [ text "hello@vondysolutions.com" ]
+            , p [] [ text "support@vondysolutions.com" ]
             ]
         ]
 
